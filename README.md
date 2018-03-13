@@ -1,6 +1,4 @@
-# ElasticSearch experiment - collecting user sessions
-
-## Project description
+## ElasticSearch experiment with Docker - collecting fake user sessions
 
 These are two simple applications that do following things:
 
