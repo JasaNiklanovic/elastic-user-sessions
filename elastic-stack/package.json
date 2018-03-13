@@ -1,5 +1,5 @@
 {
-  "name": "elasticsearch-tutorial",
+  "name": "elasticsearch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+  "author": "Jasa Niklanovic",
   "license": "MIT",
   "dependencies": {
     "pino": "^4.10.2",
