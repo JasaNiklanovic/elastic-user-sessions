@@ -7,7 +7,7 @@
     "es:start": "docker run -d --name es -p 9200:9200 -e 'http.host=0.0.0.0' -e 'transport.host=127.0.0.1' -e 'http.cors.enabled=true' -e 'http.cors.allow-origin=*' -e 'xpack.security.enabled=false' docker.elastic.co/elasticsearch/elasticsearch:6.0.0",
     "es:clean": "docker stop es && docker rm es",
     "es:restart": "npm run es:clean && npm run es:start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "keywords": [],
   "author": "Jasa Niklanovic",
@@ -15,5 +15,9 @@
   "dependencies": {
     "elasticsearch": "^14.0.0",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
   }
 }
