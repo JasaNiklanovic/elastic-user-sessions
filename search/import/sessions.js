@@ -7,14 +7,14 @@ const start = async () => {
   });
 
   await client.ping({requestTimeout: 30000});
-  console.log('pinged server');
+  console.log('pinged server once');
 
   try {
     await client.indices.create({index: 'user_sessions'});
     console.log('created index user_sessions');
   } catch (e) {
     if (e.status === 400) {
-      console.log('index exists');
+      console.log('index already exists');
     } else {
       throw e;
     }
