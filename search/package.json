@@ -1,7 +1,7 @@
 {
   "name": "search",
   "version": "1.0.0",
-  "description": "",
+  "description": "Some description here",
   "main": "index.js",
   "scripts": {
     "es:start": "docker run -d --name es -p 9200:9200 -e 'http.host=0.0.0.0' -e 'transport.host=127.0.0.1' -e 'http.cors.enabled=true' -e 'http.cors.allow-origin=*' -e 'xpack.security.enabled=false' docker.elastic.co/elasticsearch/elasticsearch:6.0.0",

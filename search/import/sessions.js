@@ -11,7 +11,7 @@ const start = async () => {
 
   try {
     await client.indices.create({index: 'user_sessions'});
-    console.log('created index user_sessions');
+    console.log('created index user_sessions once');
   } catch (e) {
     if (e.status === 400) {
       console.log('index already exists');
