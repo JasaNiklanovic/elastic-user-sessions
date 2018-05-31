@@ -7,7 +7,7 @@ const METADATA = [
   {
     "client_database_1": [1355, 3535, 5135, 31335]
   }, {
-    "client_database_2": [8824, 9998, 666, 12, 5]
+    "client_database_2": [8824, 9998, 666, 12, 5, 6]
   }
 ]
 
